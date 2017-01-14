@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <!--Vendors-->
+
+    <script  type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script  type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!--Application's -->
+    <script type="text/javascript" src="build/scripts/script.min.js"></script>
+
+
+
+</head>
+<body ng-app="shoppingApp">
+<div ng-include="'src/app/templates/header.html'"></div>
+<h1> Index page</h1>
+<div ng-controller="LoginController as vm"></div>
+<view-user-Details></view-user-Details>
+
+<div ng-include="'src/app/templates/footer.html'"></div>
+
+</body>
+</html>

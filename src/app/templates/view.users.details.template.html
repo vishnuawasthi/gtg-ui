@@ -1,0 +1,11 @@
+<div>
+    <h1>Component</h1>
+    {{vm.message}}
+    <br/>
+    <div class="row" ng-repeat="user in  vm.users">
+        <div class="col-sm-4"> {{user.firstName}}</div>
+        <div class="col-sm-4">{{user.lastName}}</div>
+        <div class="col-sm-4">{{user.address}}</div>
+
+    </div>
+</div>
